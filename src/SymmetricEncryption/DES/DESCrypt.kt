@@ -31,7 +31,9 @@ object DESCrypt {
     //算法
     val algorithm = "DES"
 
-    //DES加密
+    /**
+     * DES加密
+     */
     fun encrypt(input: String, password: String): String {
 
         //1、创建cipher对象
@@ -53,7 +55,9 @@ object DESCrypt {
         return Base64.encode(encrypt)
     }
 
-    //DES解密
+    /**
+     * DES解密
+     */
     fun decrypt(input: String, password: String): ByteArray {
 
         //1、创建cipher对象
